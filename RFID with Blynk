@@ -6,8 +6,8 @@
 #include <MFRC522.h>
 
 char auth[] = "kEJt6j8qZKngjAZRKEv1UkEpF7z49kVi";
-char ssid[] = "OPPO A3s";
-char pass[] = "swf123456";
+char ssid[] = "I love maid";
+char pass[] = "maid is moe";
 
 #define SDA_PIN D2
 #define RST_PIN D1
@@ -59,7 +59,7 @@ void loop()       // put your main code here, to run repeatedly:
   if(content.substring(1) == "67 FD C9 C3")
           {
             lcd.clear();
-            lcd.print(0, 0, "benar kuy");                                              // Print if card is TRUE
+            lcd.print(0, 0, "Maidbot: Accsess granted welcome back master!");                                              // Print if card is TRUE
             lcd.print(0, 1, content);
             delay(10000);      
           } 
@@ -67,7 +67,7 @@ void loop()       // put your main code here, to run repeatedly:
           else
           {                  
             lcd.clear();
-            lcd.print(0, 0, "salah kuy");                                   // Print if card is FALSE
+            lcd.print(0, 0, "Maidbot: Sorry invalid RFID Card");                                   // Print if card is FALSE
             lcd.print(0, 1, "ACCSESS DENIED");
           }                           
           
