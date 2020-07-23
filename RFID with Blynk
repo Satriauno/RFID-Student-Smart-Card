@@ -5,9 +5,9 @@
 #include <BlynkSimpleEsp8266.h>
 #include <MFRC522.h>
 
-char auth[] = "kEJt6j8qZKngjAZRKEv1UkEpF7z49kVi";
-char ssid[] = "I love maid";
-char pass[] = "maid is moe";
+char auth[] = "Your auth token put it here"; // Auth token
+char ssid[] = "I love maid"; // wifi
+char pass[] = "maid is moe"; // Password
 
 #define SDA_PIN D2
 #define RST_PIN D1
