@@ -1,2 +1,2 @@
 # RFID card 
-RFID card how to conect to Blynk and coding use Arduino ide!
+RFID card coding use Arduino ide!
